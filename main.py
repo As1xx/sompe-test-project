@@ -1,10 +1,11 @@
-import os
+import time
 
 
 def main():
-    service_name = os.getenv("SERVICE_NAME", "default")
-    print(f"Hello world from {service_name}")
+    print("Hello from some-pro!")
 
 
 if __name__ == "__main__":
-    main()
+    while True:
+        main()
+        time.sleep(5)
